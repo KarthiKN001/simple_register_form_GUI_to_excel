@@ -37,6 +37,10 @@ class MainWindow(QMainWindow, Ui_MainWindow):
                       self.data[5]]
         reg.to_csv('C:\\Users\\Desktop\\regis.csv', mode='w', header=True, index=False,
                    index_label=None)
+        self.name_input.clear()
+        self.mobile_input.clear()
+        self.email_input.clear()
+        self.ic_input.clear()
         self.data.clear()
 
 
